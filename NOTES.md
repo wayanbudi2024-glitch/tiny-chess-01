@@ -8,7 +8,7 @@ Single-file Python 3.13 (stdlib only). `golfed2.py` (11,223 bytes) packed by the
 
 ## Why a fresh build (v3)
 
-v2 (practice Elo mean 1,278, below the 1,365 baseline) failed kit check `thinking_reproduces`: only 39/306 counted lines were in the transcripts, because its source was produced by a minify script and re-typed from a read. This v3 is a new engine authored from scratch in one session — same architecture, own code — then packed with `makefun compress` as a separate command, so the transcripts show the source being written and compressed.
+v2 (Elo mean 1,278, below baseline 1,365) failed kit check `thinking_reproduces` (39/306 lines): its source came from a minify script and re-typing. This v3 is a new engine authored from scratch in one session, then packed with `makefun compress` as a separate command.
 
 ## Correctness (local)
 
